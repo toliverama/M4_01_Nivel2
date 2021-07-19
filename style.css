@@ -1,0 +1,54 @@
+
+.marco{
+    height: 1000px;
+    width: 1000px;
+    
+    border-color: black;
+    border: 1px solid black;
+    position: absolute;
+}
+
+.pelota{
+    width: 100px;
+     height: 100px;     
+     border-radius: 50%;
+     background: #d7e936;
+     animation-name: rebote ;
+     animation-duration: 1s;
+     position: relative;
+     animation-timing-function: ease-in;
+     animation-direction:alternate;
+     animation-iteration-count: infinite;   
+    
+}
+.lateral{
+    position: relative;
+    animation-name: lateral ;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-timing-function: linear;
+}
+
+
+
+@keyframes rebote {
+
+    0% {
+        top: 60px; height: 100px;
+    }
+    95%{
+        height: 100px;
+    }
+    100% {
+       top: 950px; height: 50px;
+    }    
+    }
+
+@keyframes lateral {
+
+    0% {left: 0px;}
+
+    100% {left: 900px;}
+    
+}
